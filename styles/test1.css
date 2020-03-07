@@ -1,0 +1,17 @@
+body{
+  margin: 0;
+}
+
+#tijdTesten{
+  color: tomato;
+  font-family: roboto;
+  font-size: 80px;
+  margin-bottom: 0px;
+}
+
+#tijdTestenOnderschrift{
+  color: dodgerblue;
+  font-family: roboto;
+  font-size: 60px;
+  margin-top: 0px;
+}
