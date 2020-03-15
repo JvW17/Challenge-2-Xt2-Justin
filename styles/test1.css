@@ -1,17 +1,69 @@
+/* Fonts */
+@import url("https://use.typekit.net/zkx6vyo.css");
+
+/* Algemene styling */
 body{
   margin: 0;
+  background-color: #F7F9FA;
 }
 
+p, marquee{
+  font-family: unibody-8-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  margin: 0px;
+}
+
+
+
+/* Klok styling */
+.clock{
+  background: url(../afbeeldingen/klokCijfers.svg) no-repeat center;
+  background-size: 88%;
+  border-radius: 50%;
+  border: solid 10px #A7A9AC;
+  width: 20em;
+  height: 20em;
+  position: relative;
+  background-color: white;
+  margin: 15% 0% 15% 0%;
+}
+
+    /* Dit is het rondje in het midden van de klok */
+.clock:after {
+  background-color: black;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  z-index: 10;
+}
+
+/*
 #tijdTesten{
-  color: tomato;
-  font-family: roboto;
-  font-size: 80px;
+  color: black;
   margin-bottom: 0px;
 }
 
 #tijdTestenOnderschrift{
-  color: dodgerblue;
-  font-family: roboto;
-  font-size: 60px;
+  color: black;
   margin-top: 0px;
 }
+
+#schermpje{
+  background-color: #D2E6F8;
+  width: 330px;
+  margin: 0 auto;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 3%;
+  padding: 20px;
+}
+*/
