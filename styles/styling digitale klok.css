@@ -1,0 +1,183 @@
+/* Fonts */
+@import url("https://use.typekit.net/zkx6vyo.css");
+
+/* Algemene styling van de pagina */
+  body{
+    margin: 0;
+    height: 100vh;
+  }
+
+  p, marquee{
+    font-family: unibody-8-new, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+  }
+
+  .box1{
+    padding: 5%;
+  }
+
+/* Styling van specifieke elementen op de pagina */
+  #digitaleKlokCijfers{
+    font-family: poppins medium;
+    font-size: 175px;
+    margin: -5% 0% -5% 0%;
+  }
+
+  #datum{
+    display: inline;
+  }
+
+  #datumTekstMargin{
+    margin-top: 4%;
+  }
+
+  #tijdTesten{
+    color: black;
+    margin-bottom: 0px;
+  }
+
+  #tijdTestenOnderschrift{
+    color: black;
+    margin-top: 0px;
+  }
+
+  #schermpje{
+    /*  background-color: #D2E6F8; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    border: 5px solid #005288;
+    width: 100%;
+    padding: 15px 15px 15px 15px;
+    margin: 5% 0% 5% 0%;
+  }
+
+
+/* Animaties */
+  /* Onderstaande animatie zorgt ervoor dat de (witte) achtergrond van de klok discolichten laat zien. */
+    #digitaleKlok{
+      background-color: white;
+      border-radius: 10px;
+      transition-duration: 2s;
+    }
+
+    #digitaleKlok.discoStaatAan{
+      animation: 2s discoKleuren linear infinite alternate both;
+      transition-duration: 0.1s;
+    }
+
+    /* Bijbehorende keyframes */
+      @keyframes discoKleuren{
+        0%{
+          background-color: #FC0A64;
+        }
+        20%{
+          background-color: #FE6B35;
+        }
+        40%{
+          background-color: #FEF900;
+        }
+        60%{
+          background-color: #12B296;
+        }
+        80%{
+          background-color: #850295;
+        }
+        100%{
+          background-color: #0402BA;
+        }
+      }
+
+  /* Onderstaande animatie zorgt ervoor dat de cijfers van de klok discolichten laten zien. */
+    #digitaleKlokCijfers.discoStaatAanCijfers{
+      animation: 1s discoStaatAanCijfers infinite alternate ease-in-out;
+    }
+
+    /* Bijbehorende keyframes */
+      @keyframes discoStaatAanCijfers{
+        0%{
+          color: white;
+        }
+        100%{
+          color: black;
+        }
+      }
+
+  /* Onderstaande animatie zorgt ervoor dat de linkerknop tot 270 graden rond gaat draaien */
+    #discoKnop.discoRonddraaienLinks{
+      animation: 1s discoRonddraaienLinks infinite alternate ease-in-out;
+    }
+
+    /* Bijbehorende keyframes */
+      @keyframes discoRonddraaienLinks{
+        0%{
+          webkit-transform: rotate(0);
+                  transform: rotate(0);
+        }
+        100%{
+          -webkit-transform: rotate(270deg);
+                  transform: rotate(270deg);
+        }
+      }
+
+  /* Onderstaande animatie zorgt ervoor dat de rechterknop één keer 360 graden rond draait */
+    #stopKnop.discoRonddraaienRechts{
+      animation: 1s discoRonddraaienRechts 1 reverse ease-in-out;
+    }
+
+    /* Bijbehorende keyframes */
+      @keyframes discoRonddraaienRechts{
+        0%{
+          -webkit-transform: rotate(0);
+                  transform: rotate(0);
+        }
+        100%{
+          -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);
+        }
+      }
+
+  /* Onderstaande styling en animaties zorgen ervoor dat de twee knoppen van uiterlijk veranderen na klikken */
+    .knop{
+      border: none;
+      color: #272727;
+      background-color: #EFD4BC;
+      border-radius: 50%;
+      height: 83px;
+      width: 83px;
+      font-size: 20px;
+      font-family: raleway medium;
+      border: 7px solid #F39237;
+      outline: white;
+    }
+
+    #discoKnop{
+      transition-duration: 0.5s;
+    }
+
+    #discoKnop.ingedruktLinks{
+      color: white;
+      background-color: #F39237;
+      border: 7px solid #EFD4BC;
+      transition-duration: 0.5s;
+    }
+
+    .knopRood{
+      color: white;
+      background-color: #D63230;
+      border: 7px solid #E8CFCF;
+    }
+
+    #stopKnop{
+      transition-duration: 0.5s;
+    }
+
+    #stopKnop.ingedruktRechts{
+      color: #272727;
+      background-color: #E8CFCF;
+      border: 7px solid #D63230;
+      transition-duration: 0.5s;
+    }

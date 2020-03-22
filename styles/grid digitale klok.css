@@ -1,0 +1,442 @@
+/* Algemene styling in de grid-container en per grid-item */
+	.grid-container{
+		padding-top: 20px;
+		display: grid;
+
+		grid-template-rows: 1fr;
+		grid-gap: 0px;
+
+		width: 90%;
+		margin: 0 auto;
+
+		grid-template-columns: 1fr 1fr;
+
+		grid-template-areas:
+			"klok klok"
+      "schermpje schermpje"
+      "linkerknop rechterknop"
+	}
+
+                              /* Styling van de grid-boxes (bij mobiele weergave) */
+                                .box1{
+                                  grid-area: klok;
+																	background-color: #005288;
+                                  border-radius: 20px 20px 0px 0px;
+                                  text-align: center;
+                                  display: flex;
+                                  flex-flow: column;
+                                  align-content: center;
+                                  position: relative;
+                                 	border: 10px solid #005288;
+																	border-bottom: 0px;
+                                }
+
+                                .box2{
+                                  grid-area: linkerknop;
+																	background-color: #F7F9FA;
+																	border-radius: 0px 0px 0px 20px;
+                                  display: flex;
+                                  justify-content: center;
+                                  align-items: center;
+                                  resize: both;
+                                  position: relative;
+																	border-left: 10px solid #005288;
+																	border-bottom: 10px solid #005288;
+                                }
+
+                                .box3{
+                                  grid-area: schermpje;
+																	background-color: #F7F9FA;
+                                  position: relative;
+																	border-radius: 0px 0px 0px 0px;
+                                  display: flex;
+                                  justify-content: center;
+                                  align-items: center;
+                                  resize: both;
+																	border-left: 10px solid #005288;
+																	border-right: 10px solid #005288;
+                                }
+
+																.box4{
+                                  grid-area: rechterknop;
+																	background-color: #F7F9FA;
+																	border-radius: 0px 0px 20px 0px;
+                                  display: flex;
+                                  justify-content: center;
+                                  align-items: center;
+                                  resize: both;
+                                  position: relative;
+																	border-right: 10px solid #005288;
+																	border-bottom: 10px solid #005288;
+                                }
+
+	/* Styling in box1 */
+	#digitaleKlokCijfers{
+		font-size: 24vw;
+		margin: -2% 0% -2% 0%;
+	}
+
+	/* Styling in box2 en box4 */
+	.knop{
+		font-size: 26px;
+		height: 110px;
+	  width: 110px;
+		margin-top: 2%;
+		margin-bottom: 10%;
+	}
+
+	/* Styling in box3 */
+	#schermpje{
+	  width: 81%;
+	  margin: 5% 0% 5% 0%;
+	}
+
+	#tekstVoorDeDatum{
+		display: none;
+	}
+
+	p{
+		font-size: 20px;
+	}
+
+
+/* Kleine tablet staand */
+@media only screen and (min-width: 599px) and (max-width: 767px){
+	.grid-container{
+		padding-top: 20px;
+		display: grid;
+
+		grid-template-columns: 25% 50% 25%;
+		grid-template-rows: 1fr;
+		grid-gap: 0px;
+
+		width: 82.7%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+
+		grid-template-areas:
+			"klok klok klok"
+      "linkerknop schermpje rechterknop"
+	}
+
+	p{
+		font-size: 1em;
+	}
+
+	/* Styling in box1 */
+	.box1{
+		border-top: 10px solid #005288;
+		border-right: 10px solid #005288;
+		border-left: 10px solid #005288;
+	}
+
+	#digitaleKlokCijfers{
+		font-size: 25vw;
+		margin: -5% 0% -5% 0%;
+	}
+
+	/* Styling in box2 en box4 */
+	.box2{
+		border-left: 10px solid #005288;
+		border-bottom: 10px solid #005288;
+	}
+
+	.knop{
+		font-size: 20px;
+		height: 83px;
+	  width: 83px;
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+
+	.box4{
+		border-right: 10px solid #005288;
+		border-bottom: 10px solid #005288;
+	}
+
+	/* Styling in box3 */
+	#schermpje{
+	  width: 85%;
+	  margin: 5% 0% 5% 0%;
+	}
+
+	#tekstVoorDeDatum{
+		display: none;
+	}
+
+	.box3{
+		border-left: 0px;
+		border-right: 0px;
+		border-bottom: 10px solid #005288;
+	}
+
+}
+
+
+/* Grote tablet staand */
+@media only screen and (min-width: 768px) and (max-width: 949px){
+	.grid-container{
+    padding-top: 20px;
+		display: grid;
+
+		grid-template-columns: 25% 50% 25%;
+		grid-template-rows: 1fr;
+		grid-gap: 0px;
+
+		width: 65%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+
+		grid-template-areas:
+			"klok klok klok"
+      "linkerknop schermpje rechterknop"
+	}
+
+	p{
+		font-size: 0.9em;
+	}
+
+	/* Styling in box1 */
+	.box1{
+		border-top: 10px solid #005288;
+		border-right: 10px solid #005288;
+		border-left: 10px solid #005288;
+	}
+
+	#digitaleKlokCijfers{
+		font-size: 18vw;
+		margin: -2% 0% -2% 0%;
+	}
+
+	/* Styling in box2 en box4 */
+	.box2{
+		border-left: 10px solid #005288;
+		border-bottom: 10px solid #005288;
+	}
+
+	.knop{
+		font-size: 20px;
+		height: 83px;
+	  width: 83px;
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+
+	.box4{
+		border-right: 10px solid #005288;
+		border-bottom: 10px solid #005288;
+	}
+
+	/* Styling in box3 */
+	.box3{
+		border-left: 0px;
+		border-right: 0px;
+		border-bottom: 10px solid #005288;
+	}
+
+	#tekstVoorDeDatum{
+		display: inline;
+	}
+
+}
+
+
+/* Tablet liggend */
+@media only screen and (min-width: 950px) and (max-width: 1299px){
+	.grid-container{
+    padding-top: 20px;
+		display: grid;
+
+		grid-template-columns: 25% 50% 25%;
+		grid-template-rows: 1fr;
+		grid-gap: 0px;
+
+		width: 55%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+
+		grid-template-areas:
+			"klok klok klok"
+      "linkerknop schermpje rechterknop"
+	}
+
+	p{
+		font-size: 0.9em;
+	}
+
+	/* Styling in box1 */
+	.box1{
+		border-top: 10px solid #005288;
+		border-right: 10px solid #005288;
+		border-left: 10px solid #005288;
+	}
+
+	#digitaleKlokCijfers{
+	  font-size: 15vw;
+	}
+
+	/* Styling in box2 en box4 */
+	.box2{
+		border-left: 10px solid #005288;
+		border-bottom: 10px solid #005288;
+	}
+
+	.knop{
+		font-size: 20px;
+		height: 83px;
+	  width: 83px;
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+
+	.box4{
+		border-right: 10px solid #005288;
+		border-bottom: 10px solid #005288;
+	}
+
+	/* Styling in box3 */
+	.box3{
+		border-left: 0px;
+		border-right: 0px;
+		border-bottom: 10px solid #005288;
+	}
+
+	#tekstVoorDeDatum{
+		display: inline;
+	}
+
+}
+
+
+/* Kleine desktop */
+@media only screen and (min-width: 1300px) and (max-width: 1919px){
+	.grid-container{
+		padding-top: 20px;
+		display: grid;
+
+		grid-template-columns: 25% 50% 25%;
+		grid-template-rows: 1fr;
+		grid-gap: 0px;
+
+		width: 40%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+
+		grid-template-areas:
+			"klok klok klok"
+      "linkerknop schermpje rechterknop"
+	}
+
+	p{
+		font-size: 0.95em;
+	}
+
+	/* Styling in box1 */
+	.box1{
+		border-top: 10px solid #005288;
+		border-right: 10px solid #005288;
+		border-left: 10px solid #005288;
+	}
+
+	#digitaleKlokCijfers{
+	  font-size: 11vw;
+	}
+
+	/* Styling in box2 en box4 */
+	.box2{
+		border-left: 10px solid #005288;
+		border-bottom: 10px solid #005288;
+	}
+
+	.knop{
+		font-size: 20px;
+		height: 83px;
+	  width: 83px;
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+
+	.box4{
+		border-right: 10px solid #005288;
+		border-bottom: 10px solid #005288;
+	}
+
+	/* Styling in box3 */
+	.box3{
+		border-left: 0px;
+		border-right: 0px;
+		border-bottom: 10px solid #005288;
+	}
+
+	#tekstVoorDeDatum{
+		display: inline;
+	}
+
+}
+
+
+/* Grote desktop */
+@media only screen and (min-width: 1920px) {
+	.grid-container{
+		padding-top: 20px;
+		display: grid;
+
+		grid-template-columns: 25% 50% 25%;
+		grid-template-rows: 1fr;
+		grid-gap: 0px;
+
+		width: 40%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+
+		grid-template-areas:
+			"klok klok klok"
+      "linkerknop schermpje rechterknop"
+	}
+
+	p{
+		font-size: 1.2em;
+	}
+
+/* Styling in box1 */
+	.box1{
+		border-top: 10px solid #005288;
+		border-right: 10px solid #005288;
+		border-left: 10px solid #005288;
+	}
+
+	#digitaleKlokCijfers{
+	  font-size: 11vw;
+	}
+
+	/* Styling in box2 en box4 */
+	.box2{
+		border-left: 10px solid #005288;
+		border-bottom: 10px solid #005288;
+	}
+
+	.knop{
+		font-size: 20px;
+		height: 83px;
+	  width: 83px;
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+
+	.box4{
+		border-right: 10px solid #005288;
+		border-bottom: 10px solid #005288;
+	}
+
+	/* Styling in box3 */
+	.box3{
+		border-left: 0px;
+		border-right: 0px;
+		border-bottom: 10px solid #005288;
+	}
+
+	#tekstVoorDeDatum{
+		display: inline;
+	}
+
+}

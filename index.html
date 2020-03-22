@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Digitale klok</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" href="styles/styling digitale klok.css" rel="stylesheet" />
+		<link type="text/css" href="styles/grid digitale klok.css" rel="stylesheet" />
+		<link rel="icon" type="image/png" href="afbeeldingen/klokFavicon.png">
+		<script type="text/javascript" src="scripts/script digitale klok.js" defer></script>
+	</head>
+
+	<body onload="huidigeTijd()">
+		<main>
+
+			<div class="grid-container">
+
+				<!--  Styling in box1, het blok met de klok. -->
+				<section class="grid-item box1">
+					<section id="digitaleKlok" class="disco">
+						<p id="digitaleKlokCijfers"></p>
+					</section>
+
+				</section>
+
+				<!-- Styling in box2, het blok met de linkerknop. -->
+				<section class="grid-item box2">
+					<button class="knop" id="discoKnop">Disco</button>
+				</section>
+
+				<!-- Styling in box3, het blok met het schermpje. -->
+				<section class="grid-item box3">
+					<article id="schermpje" class="discoKlein">
+			      <p id="tijdTesten"></p>
+			      <p id="tijdTestenOnderschrift"></p>
+						<p id="datumTekstMargin"><span id="tekstVoorDeDatum">Datum: </span><span id="datum"></span></p>
+					</article>
+				</section>
+
+				<!-- Styling in box4, het blok met de rechterknop. -->
+				<section class="grid-item box4">
+					<button class="knop knopRood" id="stopKnop">Stop</button>
+				</section>
+
+			</div>
+
+		</main>
+	</body>
+
+</html>
