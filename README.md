@@ -9,6 +9,7 @@ Hoe laat de klok de verschillende fases van de dag zien (ochtend, middag, avond 
 - Als het tussen 6:00 en 12:00 is, heeft de body een lichtroze/lichtblauwe achtergrond-gradient.
 - Als het tussen 12:00 en 18:00 is, heeft de body een lichtgroene/lichtblauwe achtergrond-gradient.
 - Als het tussen 18:00 en 0:00 is, heeft de body een lichtpaarse/lichtblauwe achtergrond-gradient.
+
 Ook heeft het kleine schermpje onderin in het midden van de klok bij iedere fase van de dag dezelfde kleur als de body, alleen heftiger zodat deze er meer uitspringt. Verder is in dit kleine schermpje bij iedere fase van de dag af te lezen of het ochtend, middag, avond of nacht is. Zo kunnen de gebruikers van de klok, naast de achtergrond-gradient en de kleur van het schermpje, snel aflezen om te weten komen welke fase van de dag het is. 
 In het kleine schermpje is ook de huidige datum te lezen. Deze wordt geüpdatet als de pagina gerefresht wordt.
 
