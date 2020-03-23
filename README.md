@@ -1,5 +1,7 @@
 # Challenge-2-Xt2-Justin
 
+https://jvw17.github.io/Challenge-2-Xt2-Justin/
+
 Ik heb een digitale klok gemaakt. Deze klok geeft de tijd weer van de tijdzone Midden Europese Tijd (GMT + 1).
 
 Hoe laat de klok de verschillende fases van de dag zien (ochtend, middag, avond en nacht)? In de JavaScript code gebeurt het volgende:
